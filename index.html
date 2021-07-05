@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,134 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Dashboard</title>
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <div class="container__nav">
+            <div class="container__nav-logo">
+                <p>P.</p>
+            </div>
+            <a href="#"><img src="imgs/filter.png" class="filter"></a>
+            <a href="#"><img src="imgs/dashboard.png" class="dashboard"></a>
+            <a href="#"><img src="imgs/profile.png" class="profile"></a>
+            <a href="#"><img src="imgs/stats.png" class="stats"></a>
+        </div>
+
+        <div class="container__main">
+            <h2>Progress Dashboard</h2>
+            <section class="container__main-top">
+                <div class="container__main-exam">
+                    <p><span>DEADLINE </span> 12:00</p>
+                    <p>Exam - Unit 5</p>
+                    <p>Spanish for begginers</p>
+                    <div class="container__main-top-test">
+                        <img src="imgs/profile-imgs.png">
+                        <p>Start testing</p>
+                    </div>
+                </div>
+                <div class="container__main-homework container__main-checksquares">
+                    <i class="far fa-check-circle"></i>
+                    <p>Homework</p>
+                    <p>For today's lesson.</p>
+                </div>
+                <div class="container__main-reading container__main-checksquares">
+                    <i class="far fa-check-circle"></i>
+                    <p>Reading</p>
+                    <p>25 words per week.</p>
+                </div>
+            </section>
+
+            <section class="container__main-middle">
+                <div class="container__main-groupInfo">
+                    <div class="container__groupInfo-header">
+                        <p>Group Info</p>
+                        <i class="far fa-bell"></i>
+                    </div>
+                    <p>13 students in the group</p>
+                    <div class="container__groupInfo-groupHomework">
+                        <p>Group homework</p>
+                        <p>5 students from your group online now</p>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <div class="container__groupInfo-lesson">
+                        <p>Today's lesson</p>
+                        <span>12:00</span>
+                        <p>Unit 6 - Articles</p>
+                    </div>
+                </div>
+                <div class="container__main-beginners">
+                    <div class="container__beginners-head">
+                        <img src="imgs/spain.png" alt="spain">
+                        <span>Spanish for beginners</span>
+                    </div>
+                    <div class="container__beginners-bottom">
+                        <p>75%</p>
+                        <progress value="75" max="100"></progress>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container__main-bottom">
+                <div class="container__bottom-grammar">
+                    <div class="contaienr__grammar-title">
+                        <i class="fas fa-pencil-alt"></i>
+                        <p><span>Grammar</span> <br>+ 30 grammar rules</p>
+                    </div>
+                    <i class="fas fa-angle-right"></i>
+                </div>
+                <div class="container__bottom-dictionary">
+                    <div class="contaienr__dictionary-title">
+                        <i class="fas fa-spell-check"></i>
+                        <p><span>Dictionary</span> <br>+ 10 new words</p>
+                    </div>
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </section>
+        </div>
+
+        <div class="container__profile">
+            <div class="container__profile-about">
+                <img src="imgs/replace-with-your-logo.png" alt="profile image">
+                <p>Mateo Gomez</p>
+                <p>Software Developer</p>
+            </div>
+
+            <div class="container__profile-price">
+                <p><span>Get -10% sell price</span><br>for "Spanish A2" course</p>
+                <div class="container__profile-price-arrow">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+            
+            <div class="container__profile-progress">
+                <p>Courses Progress</p>
+
+                <div class="container__progress-grammar">
+                    <p>63%</p>
+                    <i class="fas fa-pencil-alt"></i>
+                    <p><span>Grammar</span><br>Learn new rules.</p>
+                </div>
+                <div class="container__progress-dictionary">
+                    <p>78%</p>
+                    <i class="fas fa-pencil-alt"></i>
+                    <p><span>Dictionary</span><br>Learn 5 new words.</p>
+                </div>
+                <div class="container__progress-reading">
+                    <p>34%</p>
+                    <i class="fas fa-pencil-alt"></i>
+                    <p><span>Reading</span><br>Train your skill.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
 </body>
+
 </html>
