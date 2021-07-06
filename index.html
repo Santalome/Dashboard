@@ -21,33 +21,33 @@
             <div class="container__nav-logo">
                 <p>P.</p>
             </div>
-            <a href="#"><img src="imgs/filter.png" class="filter"></a>
-            <a href="#"><img src="imgs/dashboard.png" class="dashboard"></a>
-            <a href="#"><img src="imgs/profile.png" class="profile"></a>
-            <a href="#"><img src="imgs/stats.png" class="stats"></a>
+            <a href="#"><img src="imgs/filter.png" class="filter btn"></a>
+            <a href="#"><img src="imgs/dashboard.png" class="dashboard btn"></a>
+            <a href="#"><img src="imgs/profile.png" class="profile btn"></a>
+            <a href="#"><img src="imgs/stats.png" class="stats btn"></a>
         </div>
 
         <div class="container__main">
             <h2>Progress Dashboard</h2>
             <section class="container__main-top">
                 <div class="container__main-exam">
-                    <p><span>DEADLINE </span> 12:00</p>
-                    <p>Exam - Unit 5</p>
-                    <p>Spanish for begginers</p>
+                    <p><span>DEADLINE   </span>  12:00</p>
+                    <p class="title">Exam - Unit 5</p>
+                    <p class="subtitle">Spanish for begginers</p>
                     <div class="container__main-top-test">
                         <img src="imgs/profile-imgs.png">
-                        <p>Start testing</p>
+                        <p style="text-decoration: underline;">Start testing</p>
                     </div>
                 </div>
                 <div class="container__main-homework container__main-checksquares">
                     <i class="far fa-check-circle"></i>
-                    <p>Homework</p>
-                    <p>For today's lesson.</p>
+                    <p class="checksquares__title">Homework</p>
+                    <p class="checksquares__subtitle">For today's lesson.</p>
                 </div>
                 <div class="container__main-reading container__main-checksquares">
                     <i class="far fa-check-circle"></i>
-                    <p>Reading</p>
-                    <p>25 words per week.</p>
+                    <p class="checksquares__title">Reading</p>
+                    <p class="checksquares__subtitle">25 words per week.</p>
                 </div>
             </section>
 
@@ -57,23 +57,23 @@
                         <p>Group Info</p>
                         <i class="far fa-bell"></i>
                     </div>
-                    <p>13 students in the group</p>
+                    <p class="subtitle sm-subtitle">13 students in the group</p>
                     <div class="container__groupInfo-groupHomework">
-                        <p>Group homework</p>
-                        <p>5 students from your group online now</p>
+                        <p><span>Group homework</span><br>
+                        5 students from your group online now</p>
                         <i class="fas fa-angle-right"></i>
                     </div>
                     <div class="container__groupInfo-lesson">
                         <p>Today's lesson</p>
                         <span>12:00</span>
-                        <p>Unit 6 - Articles</p>
                     </div>
+                    <p class="sm-subtitle subtitle">Unit 6 - Articles</p>
                 </div>
                 <div class="container__main-beginners">
                     <div class="container__beginners-head">
-                        <img src="imgs/spain.png" alt="spain">
-                        <span>Spanish for beginners</span>
+                        <img class="container__beginners-spain"src="imgs/spain.png" alt="spain">
                     </div>
+                    <span>Spanish for beginners</span>
                     <div class="container__beginners-bottom">
                         <p>75%</p>
                         <progress value="75" max="100"></progress>
@@ -82,15 +82,15 @@
             </section>
 
             <section class="container__main-bottom">
-                <div class="container__bottom-grammar">
-                    <div class="contaienr__grammar-title">
+                <div class="container__bottom-grammar container__same">
+                    <div class="container__bottom-same container__grammar-title">
                         <i class="fas fa-pencil-alt"></i>
                         <p><span>Grammar</span> <br>+ 30 grammar rules</p>
                     </div>
                     <i class="fas fa-angle-right"></i>
                 </div>
-                <div class="container__bottom-dictionary">
-                    <div class="contaienr__dictionary-title">
+                <div class="container__bottom-dictionary container__same">
+                    <div class="container__bottom-same container__dictionary-title">
                         <i class="fas fa-spell-check"></i>
                         <p><span>Dictionary</span> <br>+ 10 new words</p>
                     </div>
@@ -102,8 +102,8 @@
         <div class="container__profile">
             <div class="container__profile-about">
                 <img src="imgs/replace-with-your-logo.png" alt="profile image">
-                <p>Mateo Gomez</p>
-                <p>Software Developer</p>
+                <p class="title">Mateo Gomez</p>
+                <p class="container__about-subtitle">Software Developer</p>
             </div>
 
             <div class="container__profile-price">
@@ -114,22 +114,22 @@
             </div>
             
             <div class="container__profile-progress">
-                <p>Courses Progress</p>
+                <p class="container__profile-title">Courses Progress</p>
 
-                <div class="container__progress-grammar">
-                    <p>63%</p>
+                <div class="container__progress-grammar container__progress-same">
+                    <p class="percent">63%</p>
                     <i class="fas fa-pencil-alt"></i>
-                    <p><span>Grammar</span><br>Learn new rules.</p>
+                    <p class="container__progress-p"><span>Grammar</span><br>Learn new rules.</p>
                 </div>
-                <div class="container__progress-dictionary">
-                    <p>78%</p>
+                <div class="container__progress-dictionary container__progress-same">
+                    <p class="percent">78%</p>
                     <i class="fas fa-pencil-alt"></i>
-                    <p><span>Dictionary</span><br>Learn 5 new words.</p>
+                    <p class="container__progress-p"><span>Dictionary</span><br>Learn 5 new words.</p>
                 </div>
-                <div class="container__progress-reading">
-                    <p>34%</p>
+                <div class="container__progress-reading container__progress-same">
+                    <p class="percent">34%</p>
                     <i class="fas fa-pencil-alt"></i>
-                    <p><span>Reading</span><br>Train your skill.</p>
+                    <p class="container__progress-p"><span>Reading</span><br>Train your skill.</p>
                 </div>
             </div>
 

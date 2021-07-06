@@ -26,12 +26,383 @@ body, html{
         "n m p";
 }
 
+/*  NAV BAR */
+
 .container__nav{
     background-color: #f1f3f6;
     grid-area: n;
     display: grid;
     grid-template-rows: repeat(8, 1fr);
     place-items: center;
+}
+
+.container__nav-logo p{
+    color: var(--red);
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2),
+                -5px -5px 8px rgba(255, 255, 255, 0.6),
+                inset 3px 3px 4px rgba(255, 255, 255, 0.8),
+                inset -3px -3px 4px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    opacity: 0.5;
+}
+
+.dashboard{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 
+        inset -3px -3px 4px rgba(255, 255, 255, 0.8),
+        inset 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*  MAIN SECTION    */
+
+.container__main{
+    padding: 0 100px;
+    grid-area: m;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr auto 1fr;
+}
+
+.container__main-top{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    column-gap: 25px;
+    align-content: start;
+}
+
+.container__main h2{
+    font-size: 2.4rem;
+    place-self: end start;
+    margin-bottom: 30px;
+}
+
+.container__main-exam{
+    background-color: var(--purple);
+    border-radius: var(--borderRadius);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container__main-top-test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__main-exam p span{
+    opacity: 0.5;
+    font-size: 0.8rem;
+    padding-right: 5px;
+}
+
+.container__main-checksquares{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: var(--borderRadius);
+}
+
+.container__main-checksquares i{
+    font-size: 1.8rem;
+}
+
+.checksquares__title{
+    font-size: 1.1rem;
+}
+
+.checksquares__subtitle{
+    font-size: 0.8rem;
+}
+
+.container__main-homework{
+    background-color: #ffede6;
+    color: var(--red)
+}
+
+.container__main-reading{
+    background-color: #f6f4ff;
+    color: var(--purple);
+}
+
+.container__main-middle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container__main-groupInfo{
+    box-shadow: 4px 6px 20px lightgray;
+    border-radius: var(--borderRadius);
+    padding: 20px;
+}
+
+.container__groupInfo-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__groupInfo-header p,
+.container__groupInfo-header i{
+    font-size: 1.2rem;
+}
+
+.container__groupInfo-header p{
+    font-weight: bold;
+}
+
+.sm-subtitle{
+    font-size: 0.8rem;
+}
+
+.container__groupInfo-groupHomework{
+    background-color: var(--orange);
+    color: white;
+    padding: 25px;
+    border-radius: var(--borderRadius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0px 15px 0px;
+}
+
+.container__groupInfo-groupHomework p span{
+    font-size: 1.2rem;
+}
+
+.container__groupInfo-groupHomework p{
+    font-size: 0.7rem;
+}
+
+.container__groupInfo-lesson{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.container__main-beginners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 80px;
+}
+
+.container__main-beginners span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container__beginners-spain{
+    width: 50px;
+    padding: 7px;
+    box-shadow: 4px 6px 20px lightgray;
+    border-radius: 12px;
+}
+
+progress{
+    border: none;
+    height: 8px;
+}
+
+progress::-webkit-progress-value{
+    background-color: var(--orange);
+    border-radius: 8px;
+}
+
+progress::-webkit-progress-bar{
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+.container__main-bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    margin-top: 30px;
+}
+
+.container__same{
+    height: 100px;
+    width: 100%;
+    border: var(--border);
+    border-radius: var(--borderRadius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container__bottom-same{
+    display: flex;
+    align-items: center;
+}
+
+.container__bottom-same i{
+    margin-right: 15px;
+    border: var(--border);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 4px 6px 20px lightgray;
+}
+
+.container__grammar-title i{
+    color: var(--red);
+}
+
+.container__dictionary-title i{
+    color: var(--purple);
+}
+
+.container__bottom-same p span{
+    font-size: 1.2rem;
+}
+
+/*  PROFILE STYLES  */
+
+.container__profile{
+    padding: 0 100px;
+    display: grid;
+    grid-area: p;
+    grid-template-rows: 30% 15% 55%;
+}
+
+.container__profile-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__profile-about img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.container__about-subtitle{
+    color: lightslategray;
+}
+
+.container__profile-about p{
+    padding-top: 10px;
+}
+
+.container__profile-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border);
+    border-radius: var(--borderRadius);
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.container__profile-price-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border);
+    border-radius: var(--borderRadius);
+    width: 30px;
+    height: 30px;
+    box-shadow: 4px 6px 20px lightgray;
+}
+
+.container__profile-price-arrow i{
+    color: var(--orange);
+}
+
+.container__profile-progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container__progress-same{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    border: var(--border);
+    border-radius: var(--borderRadius);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container__profile-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-self: center;
+}
+
+.container__progress-grammar .percent{
+    color: var(--purple);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.container__progress-dictionary .percent{
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.container__progress-reading .percent{
+    color: var(--red);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.container__progress-grammar i{
+    color: #ffffff;
+    padding: 20px 18px;
+    border-radius: var(--borderRadius);
+    background-color: var(--purple);
+    
+}
+
+.container__progress-dictionary i{
+    color: #ffffff;
+    padding: 20px 18px;
+    border-radius: var(--borderRadius);
+    background-color: var(--orange);
+}
+
+.container__progress-reading i{
+    color: #ffffff;
+    padding: 20px 18px;
+    border-radius: var(--borderRadius);
+    background-color: var(--red);
+}
+
+.container__progress-p{
+    font-size: 0.8rem;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.subtitle{
+    opacity: 0.5;
 }
 
 .contaienr__nav-logo{
